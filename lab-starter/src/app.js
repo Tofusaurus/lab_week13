@@ -10,4 +10,13 @@ cloned_button.forEach(element => element.addEventListener('click', (evt) => {
     addClicks(evt.currentTarget.outerHTML)
 }))
 
+//Part Delete
 
+const del_button = document.querySelector('button')
+
+function deleteClicks() {
+    while (copybutton.firstChild) {
+        copybutton.removeChild(copybutton.firstChild)}
+}
+
+del_button.addEventListener('click', deleteClicks)
